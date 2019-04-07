@@ -22,3 +22,7 @@
 ====================
 [2019-04-07 20:06:16] Текст ошибки: Страница не найдена | Файл: D:\OSPanel\domains\shop.loc\vendor\shop\core\Router.php | Строка: 49
 ====================
+[2019-04-07 20:58:58] Текст ошибки: Контроллер app\controllers\IndexController не найден | Файл: D:\OSPanel\domains\shop.loc\vendor\shop\core\Router.php | Строка: 46
+====================
+[2019-04-07 22:18:20] Текст ошибки: Страница не найдена | Файл: D:\OSPanel\domains\shop.loc\vendor\shop\core\Router.php | Строка: 49
+====================
