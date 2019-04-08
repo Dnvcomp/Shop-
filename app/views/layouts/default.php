@@ -9,6 +9,8 @@
 </head>
 <body>
     <h1>Шаблон DEFAULT</h1>
+
+    <?= $this->getMeta(); ?>
     <?= $content; ?>
 </body>
 </html>

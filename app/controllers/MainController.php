@@ -14,6 +14,10 @@ class MainController extends AppController
 {
     public function indexAction()
     {
-        // echo __METHOD__;
+        $this->setMeta('Главная страница', 'Описание страницы', 'Ключевые слова');
+        $name = 'John';
+        $age = 30;
+        $names = ['Andrey','John'];
+        $this->set(compact('name', 'age','names'));
     }
 }
