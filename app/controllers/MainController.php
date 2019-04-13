@@ -8,16 +8,18 @@
 
 namespace app\controllers;
 
-use shop\App;
-
 class MainController extends AppController
 {
     public function indexAction()
     {
+        $posts = \R::findAll('test');
+        $posts = \R::findOne('test','id = ?', [2]);
+        debug($posts);
+
         $this->setMeta('Главная страница', 'Описание страницы', 'Ключевые слова');
         $name = 'John';
         $age = 30;
         $names = ['Andrey','John'];
-        $this->set(compact('name', 'age','names'));
+        $this->set(compact('name', 'age','names','posts'));
     }
 }

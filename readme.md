@@ -10,5 +10,6 @@
 <h3><span>1.8</span> Класс View (1).</h3>
 <h3><span>1.9</span> Класс View (2).</h3>
 <h3><span>1.10</span> Класс Models.</h3>
+<h3><span>1.11</span>ORM RedBeanPHP</h3>
 
 

@@ -9,6 +9,8 @@
 namespace shop\base;
 
 
+use shop\Db;
+
 abstract class Model
 {
     public $attributes = [];
@@ -17,6 +19,6 @@ abstract class Model
 
     public function __construct()
     {
-        //
+        Db::instance();
     }
 }
