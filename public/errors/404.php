@@ -1,3 +1,9 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -31,6 +37,17 @@
         p a:hover{
             color: #fff;
         }
+        .footer{
+            position:absolute;
+            bottom:10px;
+            right:10px;
+            font-size:12px;
+            color:#aaa;
+        }
+        .footer a{
+            color:#666;
+            text-decoration:none;
+        }
 
     </style>
 </head>
@@ -38,8 +55,11 @@
 <div class="wrap">
     <div class="logo">
         <img src="/errors/images/404.png" alt=""  />
-        <p><a href="<?=PATH;?>">На главную</a></p>
+        <p><a href="<?=PATH;?>">Go back to Home</a></p>
     </div>
+</div>
+<div class="footer">
+    Design by - <a href="http://w3layouts.com">W3Layouts</a>
 </div>
 
 </body>
