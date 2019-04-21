@@ -1,16 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Dnvcomp
- * Date: 07.04.2019
- * Time: 20:08
- */
 
-namespace shop\base;
+namespace ishop\base;
 
+abstract class Controller{
 
-abstract class Controller
-{
     public $route;
     public $controller;
     public $model;
@@ -20,8 +13,7 @@ abstract class Controller
     public $data = [];
     public $meta = ['title' => '', 'desc' => '', 'keywords' => ''];
 
-    public function __construct($route)
-    {
+    public function __construct($route){
         $this->route = $route;
         $this->controller = $route['controller'];
         $this->model = $route['controller'];
@@ -29,21 +21,19 @@ abstract class Controller
         $this->prefix = $route['prefix'];
     }
 
-    public function getView()
-    {
+    public function getView(){
         $viewObject = new View($this->route, $this->layout, $this->view, $this->meta);
         $viewObject->render($this->data);
     }
 
-    public function set($data)
-    {
+    public function set($data){
         $this->data = $data;
     }
 
-    public function setMeta($title = '', $desc = '', $keywords = '')
-    {
+    public function setMeta($title = '', $desc = '', $keywords = ''){
         $this->meta['title'] = $title;
         $this->meta['desc'] = $desc;
         $this->meta['keywords'] = $keywords;
     }
+
 }

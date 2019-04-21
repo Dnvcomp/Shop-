@@ -6,18 +6,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/gabordemooij/redbean.git",
-            "reference": "913c8072a13105d7d702ee88e762796773d212fe"
+            "reference": "2fcf60745209495c722fb9365f04202154458b8c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/913c8072a13105d7d702ee88e762796773d212fe",
-            "reference": "913c8072a13105d7d702ee88e762796773d212fe",
+            "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/2fcf60745209495c722fb9365f04202154458b8c",
+            "reference": "2fcf60745209495c722fb9365f04202154458b8c",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.4"
         },
-        "time": "2019-03-15T09:34:00+00:00",
+        "time": "2019-04-15T06:30:41+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {

@@ -2,11 +2,11 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/vendor/ishop/core" isTestSource="false" packagePrefix="ishop\" />
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="app\" />
-      <sourceFolder url="file://$MODULE_DIR$/vendor/shop/core" isTestSource="false" packagePrefix="shop\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/gabordemooij/redbean" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/shop/core" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ishop/core" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

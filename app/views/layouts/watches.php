@@ -1,18 +1,22 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <?= $this->getMeta(); ?>
-    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <?=$this->getMeta();?>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--Custom-Theme-files-->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="/js/jquery-1.11.0.min.js"></script>
-    <script type="/application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <script src="/js/simpleCart.min.js"> </script>
-    <script type="text/javascript" src="/js/memenu.js"></script>
-    <script>$(document).ready(function(){$(".memenu").memenu();});</script>
-    <script src="/js/jquery.easydropdown.js"></script>
+    <!--start-menu-->
+    <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
 <!--top-header-->
@@ -22,10 +26,8 @@
             <div class="col-md-6 top-header-left">
                 <div class="drop">
                     <div class="box">
-                        <select tabindex="4" class="dropdown drop">
-                            <option value="" class="label">Dollar :</option>
-                            <option value="1">Dollar</option>
-                            <option value="2">Euro</option>
+                        <select id="currency" tabindex="4" class="dropdown drop">
+                            <?php new \app\widgets\currency\Currency(); ?>
                         </select>
                     </div>
                     <div class="box1">
@@ -44,7 +46,7 @@
                     <a href="checkout.html">
                         <div class="total">
                             <span class="simpleCart_total"></span></div>
-                        <img src="/images/cart-1.png" alt="" />
+                        <img src="images/cart-1.png" alt="" />
                     </a>
                     <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
                     <div class="clearfix"> </div>
@@ -214,10 +216,12 @@
         </div>
     </div>
 </div>
-<!--bottom header -->
+<!--bottom-header-->
+
 <div class="content">
-    <?= $content; ?>
+    <?=$content;?>
 </div>
+
 <!--information-starts-->
 <div class="information">
     <div class="container">
@@ -280,8 +284,15 @@
         </div>
     </div>
 </div>
-<!-- slider responsive -->
-<script src="/js/responsiveslides.min.js"></script>
+<!--footer-end-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/simpleCart.min.js"> </script>
+<script type="text/javascript" src="js/memenu.js"></script>
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>
+<!--dropdown-->
+<script src="js/jquery.easydropdown.js"></script>
+<!--Slider-Starts-Here-->
+<script src="js/responsiveslides.min.js"></script>
 <script>
     // You can also use "$(window).load(function() {"
     $(function () {
@@ -302,6 +313,7 @@
 
     });
 </script>
-<!--footer-end-->
+<script src="js/main.js"></script>
+<!--End-slider-script-->
 </body>
 </html>
